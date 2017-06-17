@@ -26,6 +26,11 @@
 		width = 100;
 		height = 100;
 
+		document.onkeydown = function(e) {
+			isRunning.checked = !isRunning.checked;
+			return !(e.keyCode == 32);
+		}
+
 		console.log(`
 				== Caution! ==
 
